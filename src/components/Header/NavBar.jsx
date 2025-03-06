@@ -20,7 +20,7 @@ const NavigationBar = () => {
         component={"nav"}
         className="fixed border border-white flex items-center justify-around gap-[18rem] w-11/12 h-20 mt-2 mx-auto z-[9999999] backdrop-blur-md rounded-s-[3rem] rounded-e-[3rem] nav-animation transition-all duration-700"
       >
-        <div className="w-[15%]">
+        <div className="w-[18%]">
           <Link
             ref={linkRef}
             to={"/"}
@@ -33,13 +33,13 @@ const NavigationBar = () => {
               src={circle}
               alt=""
               loading="lazy"
-              className="xl:w-[30%] sm:w-[28%] w-[20%]"
+              className="xl:w-[26%] sm:w-[28%] w-[20%]"
             />
             <img
               src={logo}
               alt="logo"
               loading="lazy"
-              className="absolute w-[31%] rounded-bl-[3rem] rounded-br-[3.2rem] top-[2px] "
+              className="absolute w-[26.5%] rounded-bl-[3rem] rounded-br-[3.2rem] top-[2px] "
             />
             <h2 className="text-[1.8rem] font-bold animate-text bg-gradient-to-br from-blue-600 via-purple-600 to-yellow-400 bg-clip-text text-transparent">
               Raj Yadav
