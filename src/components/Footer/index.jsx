@@ -12,9 +12,9 @@ import fb from "../../assets/3d-icon/Facebook.png";
 import linkedin from "../../assets/3d-icon/LinkedIn.png";
 import github from "../../assets/3d-icon/github.png";
 import { RiCopyrightLine } from "react-icons/ri";
-import FootLink from "../Sub_Componets/FootLink";
 import ContactInfo from "../Sub_Componets/contactInfo";
 import Hanlder from "../Sub_Componets/hanlder";
+import FootLink from "../Sub_Componets/footLink";
 
 const Footer = () => {
   return (
