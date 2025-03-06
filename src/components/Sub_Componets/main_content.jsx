@@ -23,7 +23,7 @@ const Content = () => {
         <span className="auto-typing-1 text-[#f8ce96]">
           {/* <TextAnimation /> */}
           {/* Full Stack Developer */}
-          <TextAnimation />
+          <TextAnimation size={"2rem"} />
         </span>
       </h2>
       <p className="xl:text-[1.02rem] lg:text-[0.9rem] sm:text-[0.81rem] text-[0.8rem] mt-2 font-semibold leading-normal">

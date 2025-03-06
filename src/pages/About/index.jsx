@@ -38,7 +38,7 @@ const About = () => {
                     <h2 className="md:text-[1.7rem] flex sm:text-[1.5rem] text-[13.5px] sm:mx-auto mx- font-semibold leading-normal">
                       {item.heading}
                       <span className="auto-typing-1 md:ml-2 ml-1 text-[#f8ce96]">
-                        <TextAnimation />
+                        <TextAnimation size={"1.7rem"} />
                         {/* Full Stack Developer */}
                       </span>
                     </h2>
