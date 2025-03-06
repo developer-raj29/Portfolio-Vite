@@ -1,6 +1,6 @@
 import React from "react";
 import { skills, skill6, skill5, skill4, skill3 } from "../../config";
-import Tilt from "../Sub_Componets/Tilt";
+import Tilt from "../Sub_Componets/tilt";
 
 const Skills = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Tilt from "./Tilt";
+import Tilt from "./tilt";
 
 const AboutHero = (props) => {
   const { image, id } = props;

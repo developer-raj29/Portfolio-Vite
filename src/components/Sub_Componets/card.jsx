@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Arrow from "../../assets/images/arrow.svg";
 import githubIcon from "../../assets/3d-icon/github.png";
-import Tilt from "./Tilt";
+import Tilt from "./tilt";
 import { Link } from "react-router-dom";
 import ALLButton from "./allButton";
 

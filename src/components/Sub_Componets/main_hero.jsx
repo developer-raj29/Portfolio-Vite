@@ -6,7 +6,7 @@ import DB from "../../assets/3d-icon/mongo-db.png";
 import Js from "../../assets/3d-icon/js.png";
 import Java from "../../assets/3d-icon/java.png";
 import Heros from "../../assets/images/Hero-Image1.jpg";
-import Tilt from "./Tilt";
+import Tilt from "./tilt";
 
 const Hero = () => {
   return (

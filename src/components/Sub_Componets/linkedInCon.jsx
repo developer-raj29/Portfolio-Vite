@@ -2,7 +2,7 @@ import React from "react";
 import Model from "../../assets/3d-icon/LinkdIn-Model.png";
 import photo from "../../assets/3d-icon/Passport pic.jpg";
 import baground from "../../assets/images/linkdin-bg.jpg";
-import Tilt from "./Tilt";
+import Tilt from "./tilt";
 import { Link } from "react-router-dom";
 
 const LinkedInCon = () => {

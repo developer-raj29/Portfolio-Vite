@@ -1,6 +1,6 @@
 import React from "react";
 import Model from "../../assets/3d-icon/Github-Model.png";
-import Tilt from "./Tilt";
+import Tilt from "./tilt";
 import { Link } from "react-router-dom";
 
 const GitHubStats = () => {

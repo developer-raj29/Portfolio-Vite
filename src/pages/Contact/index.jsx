@@ -3,7 +3,7 @@ import hero from "../../assets/images/3d-Contact-image.png";
 import Web from "../../assets/3d-icon/web-development.png";
 import language from "../../assets/3d-icon/language.png";
 import emailjs from "@emailjs/browser";
-import Tilt from "../../components/Sub_Componets/Tilt";
+import Tilt from "../../components/Sub_Componets/tilt";
 import toast from "react-hot-toast";
 
 const Contact = () => {
