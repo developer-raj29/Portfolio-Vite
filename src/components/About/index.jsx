@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import AboutIMG from "../../assets/images/Profile pic.jpg";
 import { about } from "../../config";
