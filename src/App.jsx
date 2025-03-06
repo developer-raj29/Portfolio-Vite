@@ -25,6 +25,7 @@ const App = () => {
   const handleBackToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   return (
     <Box
       component={"main"}
@@ -36,7 +37,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/education" element={<Education />} />
         <Route path="/work-experience" element={<WorkExperience />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<></>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Contact />

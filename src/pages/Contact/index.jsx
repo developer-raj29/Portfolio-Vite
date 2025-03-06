@@ -66,7 +66,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-[50px] pt-1 w-11/12 mx-auto">
+    <section className="pt-[15px] pb-[50px] w-11/12 mx-auto">
       <div className="mx-auto max-w-[740px] text-center">
         <h2 className="h2-heading">Get In Touch</h2>
         <h1 className="h1-heading contact">Contact Me</h1>

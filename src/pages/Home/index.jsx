@@ -5,10 +5,11 @@ import HomeComponent from "../../components/Main";
 import About from "../../components/About";
 import Education from "../../components/Education";
 import Experience from "../../components/Experience";
+import Skills from "../../components/Skills";
 
 const Home = () => {
   return (
-    <Box className="flex flex-col gap-12 w-11/12 h-[40rem] z-0 mt-4 mx-auto">
+    <Box className="flex flex-col gap-12 w-11/12 z-0 mt-4 mx-auto">
       <Box className="w-full h-[40rem] mt-[4rem] relative mx-auto">
         <HomeComponent />
       </Box>
@@ -16,7 +17,8 @@ const Home = () => {
         <StarsCanvas />
       </Suspense>
       <About />
-      {/* <Education /> */}
+      <Education />
+      <Skills />
       <Experience />
     </Box>
   );

@@ -21,7 +21,7 @@ const Pro2_Container = ({ pros }) => {
         ))}
       </div>
 
-      <div className="w-[185px] mx-auto">
+      <div className="w-[190px] mx-auto">
         <ALLButton
           text={"Go to Home"}
           linkto={"/"}

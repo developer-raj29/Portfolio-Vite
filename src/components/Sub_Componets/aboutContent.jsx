@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import student from "../../assets/3d-icon/student.png";
 import mail from "../../assets/3d-icon/Gmail.png";
 import Location from "../../assets/3d-icon/location.png";
@@ -8,6 +8,7 @@ import TextAnimation from "./textanimation";
 
 const AboutContent = (props) => {
   const { title, heading, description, email, location, id } = props;
+  const { linkRef } = useRef(null);
 
   return (
     <div

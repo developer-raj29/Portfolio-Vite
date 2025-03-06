@@ -3,14 +3,11 @@ import Arrow from "../../assets/images/arrow.svg";
 import Card from "./card";
 import ALLButton from "./allButton.jsx";
 
-const Pro_Container = (props) => {
-  const { pro } = props;
-  const projects = pro;
-
+const Pro_Container = ({ pros }) => {
   return (
     <div className="project-page">
       <div className="py-14 px-5 flex flex-wrap justify-center xl:gap-10 lg:gap-[5.5rem] md:gap-[1.8rem] sm:gap-[2.8rem] gap-[1.8rem]">
-        {projects.map((data) => (
+        {pros.map((data) => (
           <Card
             key={data.id}
             date={data.date}
@@ -28,7 +25,7 @@ const Pro_Container = (props) => {
       <div className="w-[165px] mx-auto">
         <ALLButton
           text={"See More"}
-          linkto={"/projects"}
+          linkto={"/work-experience"}
           icon={<img src={Arrow} alt="arrow" loading="lazy" />}
         />
         {/* <Link to="/projects">

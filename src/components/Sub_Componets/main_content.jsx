@@ -1,8 +1,10 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa6";
-import ALLButton from "./allButton";
+// import ALLButton from "./allButton";
 import TextAnimation from "./textanimation";
 import SocialMediaLinks from "../Common/SocialMedia";
+import resume from "../../assets/Raj Yadav_Resume.pdf";
+import { Link } from "react-router-dom";
 
 const Content = () => {
   return (
@@ -31,12 +33,19 @@ const Content = () => {
 
       <SocialMediaLinks />
 
-      <ALLButton
-        text={"Download"}
-        page={"_blank"}
-        linkto={"/RajYadav_Resume.pdf"}
-        icon={<FaDownload />}
-      />
+      <button
+        className="xl:w-full max-w-fit py-2 xl:px-4 
+      px-4 border h-12 text-black lg:text-[1.05rem] text-[1rem] font-bold bg-[#c1ffff] rounded-[50px] mt-5 shadowcon"
+      >
+        <a
+          href={resume}
+          target={"_blank"}
+          className="flex items-center justify-center gap-3"
+        >
+          Download
+          <FaDownload />
+        </a>
+      </button>
     </div>
   );
 };

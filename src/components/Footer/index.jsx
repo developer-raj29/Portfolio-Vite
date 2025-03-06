@@ -57,13 +57,13 @@ const Footer = () => {
               />
 
               <FootLink
-                path={"#skill"}
+                path={"/#skills"}
                 name={"Skills"}
                 icon={<FaLaptopCode size={18} color="#9ae341" />}
               />
 
               <FootLink
-                path={"/projects"}
+                path={"/work-experience"}
                 name={"Projects"}
                 icon={
                   <AiOutlineFundProjectionScreen size={18} color="#9ae341" />

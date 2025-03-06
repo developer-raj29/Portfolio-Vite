@@ -866,7 +866,7 @@ export const allprojects = [
   },
 ];
 
-export const Skills = [
+export const skills = [
   {
     id: 1,
     name: "Java",
