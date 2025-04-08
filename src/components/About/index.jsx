@@ -6,7 +6,7 @@ import AboutContent from "../Sub_Componets/aboutContent";
 
 const About = () => {
   return (
-    <section className="w-full lg:h-[40rem] md:h-[64rem] h-[66rem] xl:px-10 sm:px-6 px-0 mx-auto flex items-center">
+    <section className="w-full lg:h-[40rem] md:h-[64rem] sm:h-[66rem] h-[60rem] xl:px-8 sm:px-6 px-0 mx-auto flex items-center">
       {about.map((item, index) => {
         return (
           <>

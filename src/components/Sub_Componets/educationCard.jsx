@@ -4,10 +4,7 @@ const EducationCard = (props) => {
   const { image, date, name, branch, standard, id } = props;
 
   return (
-    <div
-      className="xl:w-[80%] sm:w-[88%] xs:w-[95%] w-[92%] h-[50%] mx-auto"
-      key={id}
-    >
+    <div className="xl:w-[80%] sm:w-[88%] w-[92%] h-[50%] mx-auto" key={id}>
       <li className="relative min-h-full mb-5 sm:ms-4 ms-2 list-none flex text-white sm:gap-5 gap-2">
         {/* <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div> */}
         <div className="div-line">

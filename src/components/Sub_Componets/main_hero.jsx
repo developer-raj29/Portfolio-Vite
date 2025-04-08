@@ -10,7 +10,7 @@ import Tilt from "./tilt";
 
 const Hero = () => {
   return (
-    <div className="xl:w-[42%] lg:w-[40%] md:w-[45%] sm:w-[55%] xs:w-[70%] w-[100%] h-full md:right-0 sm:-right-[10%] xs:-right-[15%] -right-[40%] sm:mt-0 mt-1 flex items-center justify-end md:static absolute">
+    <div className="xl:w-[42%] lg:w-[40%] md:w-[45%] sm:w-[55%] w-[100%] h-full md:right-0 sm:-right-[10%] -right-[40%] sm:mt-0 mt-1 flex items-center justify-end md:static absolute">
       <div>
         <Tilt>
           <img

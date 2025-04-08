@@ -9,8 +9,8 @@ import Skills from "../../components/Skills";
 
 const Home = () => {
   return (
-    <Box className="flex flex-col gap-12 w-11/12 z-0 mt-4 mx-auto">
-      <Box className="w-full h-[40rem] mt-[4rem] relative mx-auto">
+    <Box className="flex flex-col gap-12 w-11/12 z-0 xl:mt-4 mt-1 mx-auto">
+      <Box className="w-full h-[40rem] xl:mt-[4rem] mt-[1rem] mx-auto border border-white">
         <HomeComponent />
       </Box>
       <Suspense fallback={<div>Loading Stars...</div>}>

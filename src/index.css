@@ -168,7 +168,7 @@ section,
 .about-page,
 .education-page,
 .skill-page {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -537,8 +537,7 @@ textarea {
 
 @media (max-width: 1024px) {
   .about-page {
-    flex-direction: column;
-    height: 62rem;
+    gap: 1.5rem;
     padding: 1rem 0.5rem 1rem 2rem;
   }
 
@@ -578,9 +577,10 @@ textarea {
 
 @media (max-width: 768px) {
   .about-page {
+    flex-direction: column;
     height: 64rem;
-    border-radius: 2rem 2rem;
-    padding: 1rem 1.5rem 1rem 2rem;
+    border-radius: 4rem;
+    padding: 1rem;
   }
 
   .about-page1 {
@@ -628,7 +628,7 @@ textarea {
   .about-page,
   .education-page,
   .skill-page {
-    width: 98%;
+    width: 92%;
   }
 
   section,
@@ -639,8 +639,10 @@ textarea {
   }
 
   .about-page {
-    height: 64rem;
+    height: 56rem;
+    justify-content: unset;
     padding: 1rem 0.5rem 1rem 0.5rem;
+    border-radius: 1rem;
   }
 
   .about-page1 {

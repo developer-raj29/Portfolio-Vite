@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <Box
       component={"section"}
-      className="w-[90%] h-[36rem] mx-auto flex justify-between"
+      className="w-[90%] mx-auto relative flex justify-between"
     >
       {/* <StarsCanvas /> */}
       <Content />
