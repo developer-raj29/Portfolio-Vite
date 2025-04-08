@@ -19,7 +19,7 @@ const NavigationBar = () => {
     >
       <Box
         component={"nav"}
-        className="fixed border border-white flex items-center justify-between xl:w-11/12 w-[94%] xl:h-[5.2rem] h-[5rem] mt-2 mx-auto xl:px-[5.5rem] md:px-[3.5rem] sm:px-[2rem] px-[1.5rem] z-[9999] backdrop-blur-md rounded-s-[3rem] rounded-e-[3rem] nav-animation transition-all duration-700"
+        className="fixed border border-white flex items-center justify-between xl:w-11/12 w-[94%] xl:h-[5.2rem] h-[5rem] mt-2 mx-auto xl:px-[5.5rem] md:px-[3.5rem] sm:px-[2rem] px-[1.5rem] z-[9999] backdrop-blur-md rounded-l-[3rem] rounded-r-[3rem] nav-animation transition-all duration-700"
       >
         <div className="xl:w-[25%] lg:w-[30%] md:w-[50%] w-full">
           <Link
