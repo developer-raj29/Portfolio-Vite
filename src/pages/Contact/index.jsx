@@ -16,6 +16,8 @@ const Contact = () => {
     message: "",
   });
 
+  const [isloading, setIsLoading] = useState(false);
+
   const PUBLIC_KEY = "YOeeliDWO8RXStjkb"; // Ideally, store this in an .env file
   const TEMPLATE_ID = "template_j283led";
   const SERVICE_ID = "service_okmc83m";
@@ -30,6 +32,7 @@ const Contact = () => {
   };
 
   const submitHandler = (e) => {
+    setIsLoading(true);
     e.preventDefault();
     console.log("Submitting form...");
 
@@ -42,6 +45,7 @@ const Contact = () => {
       !formRef.current
     ) {
       toast.error("All fields are required!");
+      setIsLoading(false);
       return;
     }
 
@@ -51,6 +55,7 @@ const Contact = () => {
       })
       .then(() => {
         toast.success("Thank you 😊 Your information has been submitted!");
+        setIsLoading(false);
         setFormData({
           fullName: "",
           email: "",
@@ -60,13 +65,14 @@ const Contact = () => {
         });
       })
       .catch((error) => {
+        setIsLoading(false);
         console.error("EmailJS error:", error);
         toast.error("Something went wrong. Please try again!");
       });
   };
 
   return (
-    <section className="pt-[15px] pb-[50px] w-11/12 mx-auto">
+    <section className="pt-[15px] pb-[50px] w-11/12 max-w-screen-xl mx-auto">
       <div className="mx-auto max-w-[740px] text-center">
         <h2 className="h2-heading">Get In Touch</h2>
         <h1 className="h1-heading contact">Contact Me</h1>
@@ -86,7 +92,7 @@ const Contact = () => {
             src={Web}
             alt="Web Icon"
             loading="lazy"
-            className="absolute xl:w-[70px] lg:w-[65px] md:w-[80px] sm:w-[75px] w-[60px] xl:top-[4px] lg:top-[6px] top-[40px] xl:right-[10px] lg:right-[16px] right-0 topdown"
+            className="absolute xl:w-[70px] lg:w-[65px] md:w-[80px] sm:w-[75px] w-[60px] xl:top-[40px] lg:top-[6px] top-[40px] xl:right-[10px] lg:right-[16px] right-0 topdown"
           />
           <img
             src={language}
@@ -97,74 +103,72 @@ const Contact = () => {
         </div>
 
         <div className="xl:w-[45%] lg:w-[56%] md:w-[90%] sm:w-[90%] w-[98%] mx-auto">
-          <Tilt>
-            <div className="text-black rounded-3xl p-[1px] animate-text hover:bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500">
-              <div className="flex rounded-3xl items-center justify-center flex-col pb-3 bg-black">
-                <form
-                  ref={formRef}
-                  className="flex flex-col sm:items-start items-center"
-                >
-                  <div className="flex flex-wrap justify-center gap-4 p-5 text-black">
-                    <div className="flex lg:flex-nowrap flex-wrap sm:gap-2 gap-4 w-[100%]">
-                      <input
-                        type="text"
-                        className="xl:w-full md:w-[49%] sm:w-[49%] w-full xl:h-[50px] h-[45px] px-3 rounded-lg outline-none"
-                        placeholder="Enter full name..."
-                        name="fullName"
-                        onChange={changeHandler}
-                        value={formData.fullName}
-                      />
-                      <input
-                        type="email"
-                        className="xl:w-full md:w-[49%] sm:w-[49%] w-full xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
-                        placeholder="Enter email address..."
-                        name="email"
-                        onChange={changeHandler}
-                        value={formData.email}
-                      />
-                    </div>
-
-                    <div className="flex lg:flex-nowrap flex-wrap sm:gap-2 gap-4 w-[100%]">
-                      <input
-                        type="tel"
-                        className="xl:w-full md:w-[49%] sm:w-[49%] w-full xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
-                        placeholder="Enter mobile no..."
-                        name="phone"
-                        onChange={changeHandler}
-                        value={formData.phone}
-                      />
-                      <input
-                        type="text"
-                        className="xl:w-full md:w-[49%] sm:w-[49%] w-full xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
-                        placeholder="Enter email subject..."
-                        name="subject"
-                        onChange={changeHandler}
-                        value={formData.subject}
-                      />
-                    </div>
-
-                    <textarea
-                      placeholder="Message..."
-                      className="w-full md:h-[200px] sm:h-[180px] h-[170px] rounded-lg p-3 outline-none"
-                      name="message"
+          <div className="rounded-3xl p-[1px] animate-text hover:bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500">
+            <div className="flex rounded-3xl items-center justify-center flex-col pb-3 bg-black">
+              <form
+                ref={formRef}
+                className="flex flex-col sm:items-start items-center"
+              >
+                <div className="flex flex-wrap justify-center gap-4 p-5">
+                  <div className="flex lg:flex-nowrap flex-wrap sm:gap-2 gap-4 w-[100%]">
+                    <input
+                      type="text"
+                      className="xl:w-full md:w-[49%] sm:w-[49%] w-full xl:h-[50px] h-[45px] px-3 rounded-lg outline-none"
+                      placeholder="Enter full name..."
+                      name="fullName"
                       onChange={changeHandler}
-                      value={formData.message}
-                    ></textarea>
+                      value={formData.fullName}
+                    />
+                    <input
+                      type="email"
+                      className="xl:w-full md:w-[49%] sm:w-[49%] w-full xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
+                      placeholder="Enter email address..."
+                      name="email"
+                      onChange={changeHandler}
+                      value={formData.email}
+                    />
                   </div>
 
-                  <div className="w-[120px] xl:ml-5 lg:ml-6 sm:ml-[15.5rem] ml-[1rem]">
-                    <button
-                      type="submit"
-                      onClick={submitHandler}
-                      className="w-full h-full py-2 px-6 gap-1 text-[1.1rem] font-bold rounded-3xl bg-[#c1ffff] text-black"
-                    >
-                      Submit
-                    </button>
+                  <div className="flex lg:flex-nowrap flex-wrap sm:gap-2 gap-4 w-[100%]">
+                    <input
+                      type="tel"
+                      className="xl:w-full md:w-[49%] sm:w-[49%] w-full xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
+                      placeholder="Enter mobile no..."
+                      name="phone"
+                      onChange={changeHandler}
+                      value={formData.phone}
+                    />
+                    <input
+                      type="text"
+                      className="xl:w-full md:w-[49%] sm:w-[49%] w-full xl:h-[50px] sm:h-[45px] h-[40px] px-3 rounded-lg outline-none"
+                      placeholder="Enter email subject..."
+                      name="subject"
+                      onChange={changeHandler}
+                      value={formData.subject}
+                    />
                   </div>
-                </form>
-              </div>
+
+                  <textarea
+                    placeholder="Message..."
+                    className="w-full md:h-[200px] sm:h-[180px] h-[170px] rounded-lg p-3 outline-none"
+                    name="message"
+                    onChange={changeHandler}
+                    value={formData.message}
+                  ></textarea>
+                </div>
+
+                <div className="w-[120px] xl:ml-5 lg:ml-6 sm:ml-[15.5rem] ml-[1rem] text-black">
+                  <button
+                    type="submit"
+                    onClick={submitHandler}
+                    className="w-full h-full py-2 px-6 gap-1 text-[1.1rem] font-semibold rounded-3xl bg-[#c1ffff]"
+                  >
+                    {isloading ? "Delivering..." : "Send"}
+                  </button>
+                </div>
+              </form>
             </div>
-          </Tilt>
+          </div>
         </div>
       </div>
     </section>

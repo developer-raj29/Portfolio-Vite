@@ -13,7 +13,7 @@ const Content = () => {
         Hello, I&#39;m
       </h2>
       <h1
-        className="xl:text-[4rem] lg:text-[3.8rem] md:text-[3.6rem] sm:text-[3.5rem] text-[3rem] font-black leading-normal animate-text bg-gradient-to-r
+        className="xl:text-[5.5rem] lg:text-[3.8rem] md:text-[3.6rem] sm:text-[3.5rem] text-[3rem] font-black leading-normal animate-text bg-gradient-to-r
        from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent"
       >
         Raj Yadav

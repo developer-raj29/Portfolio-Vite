@@ -17,7 +17,7 @@ const Hero = () => {
             src={Heros}
             alt="img"
             loading="lazy"
-            className="xl:w-[28rem] md:w-[25rem] sm:w-[24rem] w-[23rem] h-full xl:-mt-[2rem] lg:-mt-[0] md:mt-[1rem] sm:mt-[3rem] -mt-[4rem] md:opacity-100 opacity-[0.50]"
+            className="xl:w-[30rem] md:w-[25rem] sm:w-[24rem] w-[23rem] h-full xl:-mt-[1rem] lg:-mt-[0] md:mt-[1rem] sm:mt-[3rem] -mt-[4rem] md:opacity-100 opacity-[0.50]"
           />
         </Tilt>
 
@@ -30,7 +30,7 @@ const Hero = () => {
           />
         </div>
         {/* Express */}
-        <div className="absolute md:flex hidden xl:top-[15rem] lg:top-[14rem] top-[15rem] xl:right-[35rem] lg:right-[24rem] right-[22rem]">
+        <div className="absolute md:flex hidden xl:top-[15rem] lg:top-[14rem] top-[15rem] xl:right-[32rem] lg:right-[24rem] right-[22rem]">
           <img
             src={Express}
             alt="Express"
@@ -39,7 +39,7 @@ const Hero = () => {
           />
         </div>
         {/* DB */}
-        <div className="absolute md:flex hidden xl:top-[29rem] lg:top-[26.5rem] top-[27rem] xl:right-[26rem] lg:right-[18rem] right-[16rem]">
+        <div className="absolute md:flex hidden xl:top-[29rem] lg:top-[26.5rem] top-[27rem] xl:right-[25rem] lg:right-[18rem] right-[16rem]">
           <img
             src={DB}
             alt="DB"
@@ -48,7 +48,7 @@ const Hero = () => {
           />
         </div>
         {/* Js */}
-        <div className="absolute md:flex hidden lg:top-[26rem] top-[24rem] xl:right-[7rem] right-[3rem]">
+        <div className="absolute md:flex hidden lg:top-[27rem] top-[24rem] xl:right-[5rem] right-[3rem]">
           <img
             src={Js}
             alt="Js"
@@ -57,7 +57,7 @@ const Hero = () => {
           />
         </div>
         {/* Java */}
-        <div className="absolute md:flex hidden top-[15rem] -right-[0]">
+        <div className="absolute md:flex hidden top-[15rem] -right-[2rem]">
           <img
             src={Java}
             alt="Java"
@@ -66,7 +66,7 @@ const Hero = () => {
           />
         </div>
         {/* Node */}
-        <div className="absolute md:flex hidden xl:top-[4rem] lg:top-[4rem] top-[7rem] xl:right-[8rem] lg:right-[4rem] right-[1rem]">
+        <div className="absolute md:flex hidden xl:top-[4rem] lg:top-[4rem] top-[7rem] xl:right-[3.5rem] lg:right-[4rem] right-[1rem]">
           <img
             src={Node}
             alt="Node"
