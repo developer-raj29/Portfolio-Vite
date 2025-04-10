@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Content = () => {
   return (
-    <div className="xl:w-[48%] lg:w-[50%] md:w-[55%] sm:w-[70%] w-[100%] h-auto flex flex-col sm:justify-center justify-start sm:mt-0 mt-24 md:z-0 z-10">
+    <div className="xl:w-[48%] lg:w-[50%] md:w-[70%] sm:w-[75%] w-[100%] h-auto flex flex-col sm:justify-center justify-start mt-0 md:z-1 z-10">
       <h2 className="xl:text-[3rem] lg:text-[2.2rem] md:text-[2rem] sm:text-[1.8rem] text-[2rem] font-black leading-normal">
         Hello, I&#39;m
       </h2>
@@ -18,12 +18,12 @@ const Content = () => {
       >
         Raj Yadav
       </h1>
-      <h2 className="flex gap-2 xl:text-[2rem] lg:text-[1.8rem] sm:text-[1.6rem] text-[1.1rem] font-black leading-normal">
+      <h2 className="flex gap-2 xl:text-[2rem] lg:text-[1.8rem] sm:text-[1.6rem] text-[1.5rem] font-black leading-normal">
         And I&#39;m
         <span className="auto-typing-1 text-[#f8ce96]">
           {/* <TextAnimation /> */}
           {/* Full Stack Developer */}
-          <TextAnimation size={"2rem"} />
+          <TextAnimation size={"1.5rem"} />
         </span>
       </h2>
       <p className="xl:text-[1.02rem] lg:text-[0.9rem] sm:text-[0.81rem] text-[0.8rem] mt-2 font-semibold leading-normal">

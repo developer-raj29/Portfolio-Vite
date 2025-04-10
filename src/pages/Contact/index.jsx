@@ -102,7 +102,7 @@ const Contact = () => {
           />
         </div>
 
-        <div className="xl:w-[45%] lg:w-[56%] md:w-[90%] sm:w-[90%] w-[98%] mx-auto">
+        <div className="xl:w-[45%] lg:w-[70%] md:w-[90%] sm:w-[90%] w-[98%] mx-auto">
           <div className="rounded-3xl p-[1px] animate-text hover:bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500">
             <div className="flex rounded-3xl items-center justify-center flex-col pb-3 bg-black">
               <form

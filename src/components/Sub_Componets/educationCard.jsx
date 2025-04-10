@@ -5,7 +5,7 @@ const EducationCard = (props) => {
 
   return (
     <div className="xl:w-[80%] sm:w-[88%] w-[92%] h-[50%] mx-auto" key={id}>
-      <li className="relative min-h-full mb-5 sm:ms-4 ms-2 list-none flex text-white sm:gap-5 gap-2">
+      <li className="relative min-h-full mb-5 sm:ms-4 ms-0 list-none flex text-white sm:gap-5 gap-2">
         {/* <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div> */}
         <div className="div-line">
           {/* <span className="absolute mt-[0.15rem] -ml-[1.6rem] flex w-1 h-1 border-solid border-2 p-2 rounded-full my-[11.5px] bg-transparent "></span> */}

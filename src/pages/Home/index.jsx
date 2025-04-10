@@ -11,7 +11,7 @@ import Project from "../../components/Projects";
 const Home = () => {
   return (
     <Box className="flex flex-col gap-12 w-11/12 z-0 xl:mt-4 mt-1 mx-auto">
-      <Box className="w-full h-[40rem] xl:mt-[2rem] mt-[1rem] mx-auto">
+      <Box className="w-full lg:h-[40rem] h-[36rem] xl:mt-[2rem] lg:mt-[1rem] mt-0 flex items-center justify-center mx-auto">
         {/* border border-white */}
         <HomeComponent />
       </Box>

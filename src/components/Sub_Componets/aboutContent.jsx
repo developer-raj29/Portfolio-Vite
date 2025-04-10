@@ -25,7 +25,7 @@ const AboutContent = (props) => {
         />
       </h1>
 
-      <h2 className="flex xl:text-[1.66rem] sm:text-[1.6rem] text-[.85rem] lg:mx-0 mx-auto font-semibold leading-normal">
+      <h2 className="flex xl:text-[1.66rem] lg:text-[1.4rem] sm:text-[1.6rem] text-[.85rem] lg:mx-0 mx-auto font-semibold leading-normal">
         {heading}
         <span className="auto-typing-1 text-[#f8ce96] ml-1">
           <TextAnimation />

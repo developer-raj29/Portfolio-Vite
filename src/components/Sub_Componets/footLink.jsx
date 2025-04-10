@@ -9,7 +9,7 @@ const FootLink = (props) => {
     <Link
       to={path}
       ref={linkRef}
-      className="flex items-center font-bold sm:text-[16px] text-[14px] gap-2"
+      className="flex items-center font-bold md:text-[14px] sm:text-[16px] text-[12px] gap-2"
       onClick={() => {
         window.scrollTo(0, 0);
       }}

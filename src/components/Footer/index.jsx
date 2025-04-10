@@ -22,10 +22,10 @@ const Footer = () => {
       <div className="footer-page">
         <div className="flex flex-wrap xl:w-[90%] lg:w-[90%] w-full lg:h-[300px] md:h-[550px] sm:h-[700px] h-[750px] justify-around mx-auto">
           <div className="lg:w-[30%] md:w-[45%] sm:w-[60%] w-full p-5 flex flex-col md:items-start items-center gap-4">
-            <h1 className="font-extrabold text-[35px] text-orange-400">
+            <h1 className="font-extrabold xl:text-[35px] sm:text-[30px] text-[28px] text-orange-400">
               Raj Yadav
             </h1>
-            <p className="font-bold md:text-start text-center sm:text-[16px] text-[14px]">
+            <p className="font-bold md:text-start text-center md:text-[14px] sm:text-[16px] text-[12px]">
               Thank you for visiting my personal portfolio website. Connect with
               me over socials.
               <br />
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
 
           <div className="lg:w-[30%] md:w-[40%] sm:w-[60%] w-full p-5 flex flex-col md:items-start items-center gap-4">
-            <h1 className="font-extrabold text-[34px] text-[#9ae341]">
+            <h1 className="font-extrabold xl:text-[34px]  sm:text-[30px] text-[28px] text-[#9ae341]">
               Direct Link
             </h1>
             <div className="flex flex-col gap-2">
@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
 
           <div className="lg:w-[30%] md:w-[45%] sm:w-[60%] w-full p-5 flex flex-col md:items-start items-center gap-4">
-            <h1 className="font-extrabold text-[35px] text-[#d650f7]">
+            <h1 className="font-extrabold xl:text-[35px] sm:text-[30px] text-[28px] text-[#d650f7]">
               Contact Info.
             </h1>
             <ContactInfo
